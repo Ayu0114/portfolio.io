@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #FCF5EE;
+}
+
+.cursive{
+  font-family: 'Allura', cursive;
+  font-size: 55px;
+  margin-left: 40px;
+}
+
+.cursive2{
+  font-family: 'Rouge Script', cursive;
+  font-size: 50px;
+}
+
+.cursive3{
+  font-family: 'Handlee', cursive;
+  font-size: 19.30px;
+  font-style: italic;
+  text-indent: 2rem;
+}
+
+.home .go-down {
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  display: block;
+  border-radius: 4px;
+  text-align: center;
+  left: 50%;
+  margin-left: -13px;
+}
+
+.home .go-down .fa {
+  color: black;
+  -webkit-animation: goDown 1s ease infinite;
+  animation: goDown 1s ease infinite;
+}
+@-webkit-keyframes goDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes goDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+
+#up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f6d0c9;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#up:hover {
+  background-color: #E9EFC9;
+}
+
+/*---------------------
+  Nav Bar
+-----------------------*/
+nav{
+    padding:10px 10px 10px 10px;
+    overflow: hidden;
+  }
+  
+  .nav-btn{
+    color: black;
+    font-family: sans-serif;
+  }
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul li.title{
+    flex: 1;
+    font-family: STXingkai;
+    font-size: 40px;
+    font-weight: 700;
+    padding-left:20px;
+    text-indent: 10px;
+  }
+  nav ul .items{
+    padding: 0 25px;
+    display: inline-flex;
+    align-items: right;
+    float: right;
+  }
+  nav ul .items a{
+    text-decoration: none;
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    padding: 0 12px;
+    float: right;
+  }
+  nav ul .items a:hover{
+    color: white;
+  }
+
+  /*Home section*/
+.home{
+	height: 100vh;
+	background-image: url('bg2.gif');
+	background-size: cover;
+	padding:15px;
+	position: relative;
+}
+
+#img1{
+	top:150px;
+	left:530px;
+	width:537px;
+	height:195px;
+}
+
+.img1-body{
+	position: absolute;
+	width: 320px;
+    height: 520px;
+	position: absolute;
+}
+

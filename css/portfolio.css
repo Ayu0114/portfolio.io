@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .side{
+    float: left;
+    padding: 50px;
+    padding-left: 80px;
+    width: 20%;
+  }
+
+  .product{
+    width: 80%;
+    float: left;
+    padding: 15px;
+  } 
+
+  .cursive2{
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+  }
+
+  .text{
+    color: #A374D5;
+}
+
+  .cursive3{
+    font-family: 'Handlee', cursive;
+    font-size: 19.30px;
+    font-style: italic;
+    text-indent: 2rem;
+  }
+  /*---------------------
+		Magazine Grid
+-----------------------*/
+.archive {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1em;
+}
+
+.article {
+  padding: 1em;
+  margin-left: 200px;
+  background: #fff;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 20px 20px rgba(0, 0, 0, 0.05);
+}
+
+.footer{
+	position: fixed;
+	padding-top:10px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color:#add8e6;
+  text-indent:30px;
+  font-family: sans-serif;
+}
+
+/*---------------------
+  Nav Bar
+-----------------------*/
+
+nav{
+  background: #F7E8F6;
+  padding:10px 10px 1px 10px;
+}
+
+.nav-btn{
+  color: #BD83CE;
+  font-family: sans-serif;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.title{
+  flex: 1;
+  font-family: STXingkai;
+  font-size: 50px;
+  font-weight: 700;
+  padding-left:20px;
+  text-indent: 10px;
+  color: #BD83CE;
+}
+nav ul .items{
+  padding: 0 25px;
+  display: inline-flex;
+}
+nav ul .items a{
+  text-decoration: none;
+  font-family: Comic Sans MS;
+  font-size: 18px;
+  padding: 0 12px;
+}
+nav ul .items a:hover{
+  color: #52006A;
+}
+
+.row {
+  display: flex;
+}
+
+.column{
+  flex: 20%;
+  padding: 5px;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 12px 47px;
+  font-size: 1.40rem;
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  margin-left: 65px;
+  color: white;
+}
+
+.btn-primary {
+  background: #E5B0EA;
+  border-color: #E5B0EA;
+}
+
+
+.btn-primary:focus,
+.btn-primary:hover {
+  background: #F7E8F6;
+  border-color: #F7E8F6;
+  color: #BD83CE;
+}
